@@ -49,19 +49,31 @@ const PurchaseArticle = () => {
           marginLeft: "0.5%",
         }}
       >
-        {getArticle.map((data, i) => {
-          return (
-            <>
-              <Col lg={4} md={6} style={{ cursor: "pointer" }} key={i}>
-                <NewsCard
-                  data={data}
-                  id={i}
-                  cardOnClick={() => openArticleByUrl(data.url)}
-                />
-              </Col>
-            </>
-          );
-        })}
+        {" "}
+        {getArticle?.length !== 0 && getArticle !== null ? (
+          <>
+            {getArticle.map((data, i) => {
+              return (
+                <>
+                  <Col lg={4} md={6} style={{ cursor: "pointer" }} key={i}>
+                    <NewsCard
+                      data={data}
+                      id={i}
+                      cardOnClick={() => openArticleByUrl(data.url)}
+                    />
+                  </Col>
+                </>
+              );
+            })}
+          </>
+        ) : (
+          <p
+            style={{ padding: "40px 0px", textAlign: "center" }}
+            className="d-block mx-auto"
+          >
+            No Data Available
+          </p>
+        )}
       </Row>
     </React.Fragment>
   );

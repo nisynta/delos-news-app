@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.article-header {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.article-purchase-title {
+  font-size: 28px;
+}
+
+.article-filter {
+  font-weight: 400;
+  font-size: 14px;
+  position: relative;
+  right: 8px;
+  background-color: #ffffff;
+  color: #74797b;
+}
+
+.logo {
+  font-size: 30px;
+  color: #2c74bc;
+}
+
+.font-10 {
+  font-size: 10px;
+}
+
+/* Pagination */
+.article-pagination {
+  font-weight: 400;
+  font-size: 12px;
+  position: relative;
+}
+
+.page-link1 {
+  position: relative;
+  font-size: 12px;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #465def;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  text-decoration: none;
+}
+
+.page-link1:hover {
+  z-index: 2;
+  color: #465def;
+  text-decoration: none;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+
+.page-link1:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(68, 90, 210, 0.25);
+}
+
+.page-item1:first-child .page-link1 {
+  margin-left: 0;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.page-item1:last-child .page-link1 {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.page-item1.active .page-link1 {
+  z-index: 3;
+  color: #fff;
+  background-color: #465def;
+  border-color: #465def;
+}
+
+.page-item1.disabled .page-link1 {
+  color: #465def;
+  pointer-events: none;
+  cursor: auto;
+  background-color: #fff;
+  border-color: #dee2e6;
+}
+
+.pagination-lg .page-link1 {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.pagination-lg .page-item1:first-child .page-link1 {
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+.pagination-lg .page-item1:last-child .page-link1 {
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.pagination-sm .page-link1 {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.pagination-sm .page-item1:first-child .page-link1 {
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+}
+
+.pagination-sm .page-item:last-child .page-link1 {
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+}
+
+.pagination {
+  float: right;
+}
+
+/* Search */
+.articles-search input {
+  width: 99%;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  padding: 7px 7px 8px 38px;
+}
+
+.articles-search img {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  top: -32px;
+  left: 12px;
+}
